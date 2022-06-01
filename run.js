@@ -42,7 +42,7 @@ client.on("message", async message => {
         showQueue(message, serverQueue);
         return;
   } else if (message.content.startsWith(`${prefix}quit`)){
-        if (serverQueue.voiceChannel) {
+        if (serverQueue.voiceChannel != undefined) {
             serverQueue.voiceChannel.leave();
             queue.delete(message.guild.id);
             return message.channel.send("Yare yare daze.");
@@ -140,6 +140,7 @@ function stop(message, serverQueue) {
 function play(guild, song) {
   const serverQueue = queue.get(guild.id);
   if (!song) {
+    serverQueue.voiceChannel.leave();
     queue.delete(guild.id);
     return serverQueue.textChannel.send(
         "End of queue!"
