@@ -2,7 +2,7 @@
   "name": "discordmusicbot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "run.js",
   "dependencies": {
     "@discordjs/node-pre-gyp": "^0.1.0",
     "@discordjs/opus": "^0.3.3",
@@ -16,8 +16,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node run.js",
+    "dev": "nodemon run.js"
   },
   "keywords": [],
   "author": "Trollmaster",
