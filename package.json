@@ -1,0 +1,24 @@
+{
+  "name": "discordmusicbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@discordjs/node-pre-gyp": "^0.1.0",
+    "@discordjs/opus": "^0.3.3",
+    "discord.js": "^12.2.0",
+    "ffmpeg": "0.0.4",
+    "ytdl-core": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Trollmaster",
+  "license": "ISC"
+}
